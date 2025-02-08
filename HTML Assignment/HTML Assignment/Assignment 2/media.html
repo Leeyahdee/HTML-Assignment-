@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Me - Media Showcase</title>
+</head>
+<body>
+    <h1>About Me</h1>
+
+    <h2>Responsive Picture</h2>
+    <picture>
+        <source srcset="image-large.jpg" media="(min-width: 1024px)">
+        <source srcset="image-medium.jpg" media="(min-width: 768px)">
+        <source srcset="image-small.jpg" media="(max-width: 767px)">
+        <img src="image-default.jpg" alt="A picture representing me">
+    </picture>
+
+    <h2>Audio Message</h2>
+    <audio controls>
+        <source src="audio.mp3" type="audio/mpeg">
+        <source src="audio.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <h2>Video Introduction</h2>
+    <video controls width="600">
+        <source src="video.mp4" type="video/mp4">
+        <source src="video.webm" type="video/webm">
+        Your browser does not support the video element.
+    </video>
+
+    <h2>Embedded YouTube Video</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/your-video-id" frameborder="0" allowfullscreen></iframe>
+
+    <p><a href="index.html">Back to Home</a></p>
+</body>
+</html>
